@@ -16,12 +16,20 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
 
-<div class="img-flex">
-  <div class="person">
-    <img src="images/person-3by2.svg" alt="owner">
-  </div>
-  <div class="person">
-    <img src="images/person-3by2.svg" alt="owner">
-  </div>
-</div>
+.top-banner {
+  display: flex;
+  align-items: center;
+}
+
+.banner img {
+  width: 10%;
+}
+
+h1 {
+  text-align: center;
+}
