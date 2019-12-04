@@ -15,3 +15,13 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+
+<div class="img-flex">
+  <div class="person">
+    <img src="images/person-3by2.svg" alt="owner">
+  </div>
+  <div class="person">
+    <img src="images/person-3by2.svg" alt="owner">
+  </div>
+</div>
