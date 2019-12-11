@@ -10,13 +10,14 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
-  font-family: "Parisienne", sans-serif;
+  font-family: Parisienne, sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
+.img-flex,
 img {
   display: block;
   width: 100%;
@@ -25,8 +26,8 @@ img {
 .top-banner {
   display: flex;
   align-items: center;
-  background-color: #4B0082;
-  border-bottom: 3px solid #FFD700;
+  background-color: #4b0082;
+  border-bottom: 3px solid #ffd700;
 }
 
 .banner img {
@@ -36,24 +37,23 @@ img {
 
 h1 {
   text-align: center;
-  color: #FFD700;
+  color: #ffd700;
   font-size: 2.5rem;
 }
 
 body {
   margin: 0;
-  background-color: #8A2BE2;
+  background-color: #8a2be2;
 }
 
 .menu a {
   text-decoration: none;
-  color: #FFD700;
-  font-size: 1.25rem;
-  padding: 1rem 0 1rem 0;
-  border: 7px solid #4B0082;
+  color: #ffd700;
+  padding: 1rem 0;
+  border: 7px solid #4b0082;
   text-align: center;
   border-radius: 10px;
-  background-color: #8A2BE2;
+  background-color: #8a2be2;
   display: block;
   font-size: 140%;
 }
@@ -71,17 +71,17 @@ body {
 }
 
 .banner {
-  background-color: #4B0082;
+  background-color: #4b0082;
 }
 
 h2 {
   font-size: 1.7rem;
+  padding: 1rem .5rem;
   padding-left: .5rem;
-  color: #FFDF00;
+  color: #ffdf00;
   background-color: #800080;
   margin: 0;
-  padding: 1rem .5rem;
-  border: 7px solid #4B0082;
+  border: 7px solid #4b0082;
   border-top: none;
   border-radius: 10px;
 }
@@ -93,11 +93,12 @@ h2 {
 
 .specifics {
   width: 50%;
-  padding: .5rem .5rem;
+  padding: .5rem;
+  border: 3px solid #ffd700;
 }
 
 .smallh2 {
-  background-color: #4B0082;
+  background-color: #4b0082;
 }
 
 .prices {
@@ -110,12 +111,8 @@ p {
 }
 
 .details {
-  font-family: "Courgette", sans-serif;
+  font-family: Courgette, sans-serif;
   color: black;
-}
-
-.specifics {
-  border: 3px solid #FFD700;
 }
 
 .card {
@@ -127,9 +124,9 @@ a {
 }
 
 .people {
-  border: 3px solid #4B0082;
+  border: 3px solid #4b0082;
   border-radius: 3px;
-  border-top: 6px solid #4B0082;
+  border-top: 6px solid #4b0082;
 }
 
 .cards {
@@ -138,6 +135,7 @@ a {
 
 .people p {
   padding-left: .5rem;
+  color: black;
 }
 
 .socialmedia {
@@ -161,7 +159,7 @@ footer {
 }
 
 .support a {
-  color: black;
+  color: #ffb6c1;
 }
 
 .support li {
@@ -169,26 +167,71 @@ footer {
 }
 
 .footer {
-  border: 3px solid #FFD700;
+  border: 3px solid #ffd700;
 }
 
 .menu a:hover {
-  background-color: #4B0082;
-  border: 3px solid #FFD700;
+  border: 3px solid #ffd700;
 }
 
 .specifics:hover {
-  background-color: #FFB6C1;
+  background-color: #ffb6c1;
 }
 
 .people:hover {
-  border: 3px solid #FFD700;
-}
-
-.people p {
-  color: black;
+  border: 3px solid #ffd700;
 }
 
 .support a:hover {
   text-decoration: underline;
+}
+
+.price {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .top-banner {
+    justify-content: space-between;
+  }
+
+  .specifics {
+    width: 33.3333%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .specifics {
+    width: 25%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  .specifics {
+    width: 20%;
+  }
+
+  .socialmedia {
+    margin-left: 1rem;
+  }
+
 }
